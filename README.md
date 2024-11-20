@@ -30,7 +30,7 @@ oc expose deployment intranet-db --port 3306
 ```
 
 
-Creer un deploiement WordPress avec les carateristiques suivantes:
+## Creer un deploiement WordPress avec les carateristiques suivantes:
 Nom: wordpress
 Code Source: quay.io/fedora/mysql-80
 
