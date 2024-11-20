@@ -70,6 +70,11 @@ By using the ```oc new-app``` command, OCP will create a deployment along with a
 
 ### Create a route to expose the _wordpress_ service
 
-```
-oc expose service wordpress
-```
+<details>
+  <summary>Click to Check Solution</summary>
+  
+  ```
+  oc expose service wordpress
+  '''
+  
+</details>
