@@ -13,11 +13,12 @@ Image: quay.io/fedora/mysql-80
 oc create deployment intranet-db --image=quay.io/fedora/mysql-80
 ```
 
-Variables d'environnement:
- MYSQL_ROOT_PASSWORD=rootpass
- MYSQL_USER=loic
- MYSQL_PASSWORD=pass
- MYSQL_DATABASE=wpdb
+### Injecter les variables d'environnement suivantes dans le deploiement _intranet-db_
+
+- _MYSQL_ROOT_PASSWORD=rootpass_
+- _MYSQL_USER=user_
+- _MYSQL_PASSWORD=pass_
+- _MYSQL_DATABASE=wpdb_
 
 ```
 oc set env deployment/intranet-db MYSQL_ROOT_PASSWORD=rootpass MYSQL_USER=loic MYSQL_PASSWORD=pass MYSQL_DATABASE=wpdb
