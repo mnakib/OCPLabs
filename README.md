@@ -6,7 +6,7 @@ The _intranet_ project will contain your WordPress application
 
 <details>
   <summary>Check Solution</summary>
-  ```
+  ```bash
   oc new-project intranet
   ```
 </details>
