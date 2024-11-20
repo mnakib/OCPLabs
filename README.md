@@ -1,13 +1,13 @@
 # OCPLabs
 
-## Creer un projet nomme: intranet
+## Creer le projet _intranet_
 ```
  oc new-project intranet
 ```
 
 ## Creer un deploiement MySQL avec les carateristiques suivantes:
-Nom: intranet-db
-Image: quay.io/fedora/mysql-80
+- _Nom: intranet-db_
+- _Image: quay.io/fedora/mysql-80_
 
 ```
 oc create deployment intranet-db --image=quay.io/fedora/mysql-80
@@ -32,8 +32,8 @@ oc expose deployment intranet-db --port 3306
 
 
 ## Creer un deploiement WordPress avec les carateristiques suivantes:
-Nom: wordpress
-Code Source: quay.io/fedora/mysql-80
+- _Nom: wordpress_
+- _Code Source: https://github.com/WordPress/WordPress.git_
 
 ```
 oc new-app https://github.com/WordPress/WordPress.git
