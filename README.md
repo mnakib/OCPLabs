@@ -5,7 +5,7 @@
 The _intranet_ project will contain your WordPress application
 
 <details>
-  <summary>Check Solution</summary>
+  <summary>Click to Check Solution</summary>
   
   ```
   oc new-project intranet
@@ -14,11 +14,11 @@ The _intranet_ project will contain your WordPress application
 </details>
   
 ## Create a MySQL MySQL with below specifications:
-- <strong>Name</strong>: _intranet-db_
-- Image: _quay.io/fedora/mysql-80_
+- *Name:* _intranet-db_
+- *Image:* _quay.io/fedora/mysql-80_
 
 <details>
-  <summary>Check Solution</summary>
+  <summary>Click to Check Solution</summary>
   
   ```
   oc create deployment intranet-db --image=quay.io/fedora/mysql-80
@@ -29,13 +29,13 @@ The _intranet_ project will contain your WordPress application
 
 ### Inject below environment variables to the _intranet-db_ MySQL deployment
 
-- <strong>MYSQL_ROOT_PASSWORD</strong>=rootpass_
-- _MYSQL_USER=user_
-- _MYSQL_PASSWORD=pass_
-- _MYSQL_DATABASE=wpdb_
+- *MYSQL_ROOT_PASSWORD*: _rootpass_
+- *MYSQL_USER*: _user_
+- *MYSQL_PASSWORD*: _pass_
+- *MYSQL_DATABASE*: _wpdb_
 
 <details>
-  <summary>Check Solution</summary>
+  <summary>Click to Check Solution</summary>
   
   ```
   oc set env deployment/intranet-db MYSQL_ROOT_PASSWORD=rootpass MYSQL_USER=user MYSQL_PASSWORD=pass MYSQL_DATABASE=wpdb
@@ -46,7 +46,7 @@ The _intranet_ project will contain your WordPress application
 ### Create a service to expose the _intranet-db_ MySQL deployment on port 3306
 
 <details>
-  <summary>Check Solution</summary>
+  <summary>Click to Check Solution</summary>
   
   ```
   oc expose deployment intranet-db --port 3306
@@ -61,7 +61,7 @@ The _intranet_ project will contain your WordPress application
 - _Code Source: https://github.com/WordPress/WordPress.git_
 
 <details>
-  <summary>Check Solution</summary>
+  <summary>Click to Check Solution</summary>
   
   ```
   oc new-app https://github.com/WordPress/WordPress.git
