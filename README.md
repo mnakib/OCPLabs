@@ -37,3 +37,9 @@ Code Source: quay.io/fedora/mysql-80
 ```
 oc new-app https://github.com/WordPress/WordPress.git
 ```
+
+## Creer une route qui exposera le service _wordpress_
+
+```
+oc expose service wordpress
+```
