@@ -29,10 +29,10 @@ The _intranet_ project will contain your WordPress application
 
 ### Inject below environment variables to the _intranet-db_ MySQL deployment
 
-- *MYSQL_ROOT_PASSWORD*: _rootpass_
-- *MYSQL_USER*: _user_
-- *MYSQL_PASSWORD*: _pass_
-- *MYSQL_DATABASE*: _wpdb_
+- *MYSQL_ROOT_PASSWORD:* _rootpass_
+- *MYSQL_USER:* _user_
+- *MYSQL_PASSWORD:* _pass_
+- *MYSQL_DATABASE:* _wpdb_
 
 <details>
   <summary>Click to Check Solution</summary>
