@@ -21,7 +21,7 @@ oc create deployment intranet-db --image=quay.io/fedora/mysql-80
 - _MYSQL_DATABASE=wpdb_
 
 ```
-oc set env deployment/intranet-db MYSQL_ROOT_PASSWORD=rootpass MYSQL_USER=loic MYSQL_PASSWORD=pass MYSQL_DATABASE=wpdb
+oc set env deployment/intranet-db MYSQL_ROOT_PASSWORD=rootpass MYSQL_USER=user MYSQL_PASSWORD=pass MYSQL_DATABASE=wpdb
 ```
 
 Creer un service pour exposer le deploiement MySQL sur le port 3306
