@@ -13,7 +13,7 @@ The _intranet_ project will contain your WordPress application
 
 </details>
   
-## Creer un deploiement MySQL avec les carateristiques suivantes:
+## Create a MySQL MySQL with below specifications:
 - _Nom: intranet-db_
 - _Image: quay.io/fedora/mysql-80_
 
@@ -27,9 +27,7 @@ The _intranet_ project will contain your WordPress application
 </details>
 
 
-
-
-### Injecter les variables d'environnement suivantes dans le deploiement _intranet-db_
+### Inject below environment variables to the _intranet-db_ MySQL deployment
 
 - _MYSQL_ROOT_PASSWORD=rootpass_
 - _MYSQL_USER=user_
@@ -45,7 +43,7 @@ The _intranet_ project will contain your WordPress application
 
 </details>
 
-### Creer un service pour exposer le deploiement MySQL sur le port 3306
+### Create a service to expose the _intranet-db_ MySQL deployment on port 3306
 
 <details>
   <summary>Check Solution</summary>
@@ -56,7 +54,7 @@ The _intranet_ project will contain your WordPress application
 </details>
 
 
-## Creer un deploiement WordPress avec les carateristiques suivantes:
+## Create a WordPress deployment with below specifications:
 - _Nom: wordpress_
 - _Code Source: https://github.com/WordPress/WordPress.git_
 
@@ -68,7 +66,9 @@ The _intranet_ project will contain your WordPress application
   ```
 </details>
 
-### Creer une route qui exposera le service _wordpress_
+By using the ```oc new-app``` command, OCP will create a deployment along with a service needed to communicate with it.
+
+### Create a route to expose the _wordpress_ service
 
 ```
 oc expose service wordpress
