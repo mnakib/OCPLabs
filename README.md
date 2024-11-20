@@ -75,6 +75,6 @@ By using the ```oc new-app``` command, OCP will create a deployment along with a
   
   ```
   oc expose service wordpress
-  '''
+  ```
   
 </details>
