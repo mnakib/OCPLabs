@@ -14,8 +14,8 @@ The _intranet_ project will contain your WordPress application
 </details>
   
 ## Create a MySQL MySQL with below specifications:
-- _Nom: intranet-db_
-- _Image: quay.io/fedora/mysql-80_
+- <strong>Name</strong>: _intranet-db_
+- Image: _quay.io/fedora/mysql-80_
 
 <details>
   <summary>Check Solution</summary>
@@ -29,7 +29,7 @@ The _intranet_ project will contain your WordPress application
 
 ### Inject below environment variables to the _intranet-db_ MySQL deployment
 
-- _MYSQL_ROOT_PASSWORD=rootpass_
+- <strong>MYSQL_ROOT_PASSWORD</strong>=rootpass_
 - _MYSQL_USER=user_
 - _MYSQL_PASSWORD=pass_
 - _MYSQL_DATABASE=wpdb_
@@ -68,7 +68,7 @@ The _intranet_ project will contain your WordPress application
   ```
 </details>
 
-By using the ```oc new-app``` command, OCP will create a deployment along with a service needed to communicate with it.
+By using the `oc new-app` command, OCP will create a deployment along with a service needed to communicate with it.
 
 ### Create a route to expose the _wordpress_ service
 
