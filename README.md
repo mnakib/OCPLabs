@@ -10,15 +10,24 @@ The _intranet_ project will contain your WordPress application
   ```
   oc new-project intranet
   ```
+
 </details>
   
 ## Creer un deploiement MySQL avec les carateristiques suivantes:
 - _Nom: intranet-db_
 - _Image: quay.io/fedora/mysql-80_
 
-```
-oc create deployment intranet-db --image=quay.io/fedora/mysql-80
-```
+<details>
+  <summary>Check Solution</summary>
+  
+  ```
+  oc create deployment intranet-db --image=quay.io/fedora/mysql-80
+  ```
+  
+</details>
+
+
+
 
 ### Injecter les variables d'environnement suivantes dans le deploiement _intranet-db_
 
