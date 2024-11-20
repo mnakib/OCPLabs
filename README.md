@@ -57,8 +57,8 @@ The _intranet_ project will contain your WordPress application
 
 
 ## Create a WordPress deployment with below specifications:
-- _Nom: wordpress_
-- _Code Source: https://github.com/WordPress/WordPress.git_
+- *Nom:* _intranet-fe_
+- *Source Code:* _https://github.com/WordPress/WordPress.git_
 
 <details>
   <summary>Click to Check Solution</summary>
