@@ -1,10 +1,16 @@
 # OCPLabs
 
-## Creer le projet _intranet_
-```
- oc new-project intranet
-```
+## Create a project named _intranet_
 
+The _intranet_ project will contain your WordPress application
+
+<details>
+  <summary>Check Solution</summary>
+  ```
+  oc new-project intranet
+  ```
+</details>
+  
 ## Creer un deploiement MySQL avec les carateristiques suivantes:
 - _Nom: intranet-db_
 - _Image: quay.io/fedora/mysql-80_
